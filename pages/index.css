@@ -3,3 +3,11 @@
 
 /*Подключение шрифта*/
 @import url(../vendor/fonts.css);
+
+/*Подключение общих стилей для всей страницы*/
+@import url(../blocks/page/page.css);
+
+/*Подключение стилей хедера*/
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__line/header__line.css);
