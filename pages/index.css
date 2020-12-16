@@ -1,0 +1,5 @@
+/*Подключение сторонних стилей*/
+@import url(../vendor/normalize.css);
+
+/*Подключение шрифта*/
+@import url(../vendor/fonts.css);
