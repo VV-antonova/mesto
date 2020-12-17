@@ -7,11 +7,16 @@
     font-weight: normal;
 }
 
+@media screen and (max-width:800px) {
+    .profile__description {
+        text-align: center;
+    }
+}
+
 @media screen and (max-width:500px) {
     .profile__description {
         max-width: 282px;
         font-size: 14px;
         line-height: 17px;
-        text-align: center;
     }
 }

@@ -7,3 +7,11 @@
     row-gap: 20px;
     list-style: none;
 }
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    .cards {
+        padding: 0 10px;
+        column-gap: 10px;
+        row-gap: 15px;
+    }
+}

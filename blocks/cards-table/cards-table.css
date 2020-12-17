@@ -4,6 +4,12 @@
     padding: 47px 0 67px;
 }
 
+@media screen and (min-width:600px) and (max-width:800px) {
+    .cards-table {
+        max-width: 100%;
+    }
+}
+
 @media screen and (max-width:500px) {
     .cards-table {
         max-width: 88%;
