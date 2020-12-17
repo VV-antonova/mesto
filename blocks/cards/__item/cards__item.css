@@ -1,5 +1,5 @@
 .cards__item {
     max-width: 282px;
-    background-color: white;
+    position: relative;
     border-radius: 10px;
 }

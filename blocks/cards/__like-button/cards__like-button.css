@@ -1,4 +1,5 @@
 .cards__like-button {
+    margin-top: 6px;
     border: none;
     background: url(../../../images/heart.svg) center no-repeat;
     background-size: 100%;
