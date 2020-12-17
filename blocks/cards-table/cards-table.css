@@ -3,3 +3,10 @@
     margin: 0 auto;
     padding: 47px 0 67px;
 }
+
+@media screen and (max-width:500px) {
+    .cards-table {
+        max-width: 88%;
+        padding: 0;
+    }
+}
