@@ -3,7 +3,7 @@
     align-items: center;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
     .profile__form {
         flex-direction: column;
         margin-bottom: 36px;
