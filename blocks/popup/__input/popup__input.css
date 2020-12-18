@@ -1,0 +1,30 @@
+.popup__input {
+    width: 100%;
+    padding-bottom: 13px;
+    box-sizing: border-box;
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    line-height: 17px;
+    
+}
+
+.popup__input::-webkit-input-placeholder {
+    color: black;
+}
+
+.popup__input::-moz-placeholder {
+    color: black;
+}
+
+.popup__input::-ms-input-placeholder {
+    color: black;
+}
+
+.popup__input::placeholder {
+    color: black;
+}
+
+.popup__input:first-of-type {
+    margin-bottom: 30px;
+}
