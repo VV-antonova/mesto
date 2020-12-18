@@ -6,4 +6,23 @@
     border-radius: 2px;
     background-color: black;
     color: white;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.popup__button:hover {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+@media screen and (max-width:500px) {
+    .popup__button {
+        height: 46px;
+        margin-top: 45px;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+    }
 }

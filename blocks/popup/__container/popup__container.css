@@ -8,3 +8,17 @@
     border-radius: 10px;
     z-index: 1;
 }
+
+@media screen and (min-width:501px) and (max-width:700px) {
+    .popup__container {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .popup__container {
+        max-height: 322px;
+        width: 282px;
+        padding: 25px 22px;
+    }
+}

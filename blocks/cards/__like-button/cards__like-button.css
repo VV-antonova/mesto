@@ -7,3 +7,13 @@
     height: 18px;
     width: 21px;
 }
+
+.cards__like-button:hover {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.cards__like-button:active {
+    background-image: url(../../../images/black-heart.svg);
+    transition: background-image 0.3s;
+}

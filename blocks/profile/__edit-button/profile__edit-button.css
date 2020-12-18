@@ -12,6 +12,12 @@
     cursor: pointer;
 }
 
+.profile__edit-button:hover {
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+
+
 @media screen and (min-width:501px) and (max-width:900px) {
     .profile__edit-button {
         top: 35px;
