@@ -1,11 +1,21 @@
 .profile__form {
-    display: flex;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(min-content, max-content));
+    column-gap: 18px;
+    grid-template-areas: 
+    "image name button"
+    "image description .";
 }
 
 @media screen and (max-width:900px) {
     .profile__form {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "image image"
+        "name button"
+        "description description";
+        justify-items: center;
+        column-gap: 0;
         margin-bottom: 36px;
     }
 }

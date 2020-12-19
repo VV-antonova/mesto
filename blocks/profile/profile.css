@@ -3,16 +3,15 @@
     margin: 0 auto;
     padding-top: 40px;
     display: grid;
-    grid-template-columns: repeat(3, minmax(min-content, max-content));
+    grid-template-columns: repeat(2, minmax(min-content, max-content));
+    justify-content: space-between;
     align-items: center;
-    column-gap: 244px;
 }
 
 @media screen and (max-width:1200px) {
     .profile {
         max-width: 83%;
         padding: 42px 0 36px;
-        column-gap: 160px;
     }
 }
 

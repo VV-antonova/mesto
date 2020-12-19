@@ -1,10 +1,12 @@
 .profile__name {
-    margin: 0 0 16px 0;
+    margin: 0;
+    margin-top: 10px;
     padding: 0;
     max-width: 294px;
     font-size: 42px;
     line-height: 48px;
     font-weight: 500;
+    grid-area: name;
 }
 
 @media screen and (min-width:501px) and (max-width:900px) {
@@ -13,10 +15,11 @@
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:900px) {
     .profile__name {
         margin-bottom: 10px;
-        max-width: 282px;
+        margin-left: 35px;
+        max-width: 189px;
         font-size: 27px;
         line-height: 33px;
         text-align: center;
