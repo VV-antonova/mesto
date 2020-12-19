@@ -1,13 +1,12 @@
 .popup {
     width: 100%;
-    padding-top: 210px;
+    padding-top: 190px;
     position: fixed;
     top: 0;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
 }
 
  .popup::before {
