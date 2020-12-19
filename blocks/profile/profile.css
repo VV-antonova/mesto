@@ -1,6 +1,7 @@
 .profile {
     max-width: 69%;
     margin: 0 auto;
+    padding-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, minmax(min-content, max-content));
     align-items: center;
