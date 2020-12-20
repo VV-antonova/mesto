@@ -9,14 +9,16 @@
 
 <body class="page">
     <header class="header">
-        <a href="#" target="_blank"><img src="images/white-logo.svg" alt="логотип Место Россия" class="header__logo"></a>
+        <a href="#" target="_blank">
+            <img src="images/white-logo.svg" alt="логотип Место Россия" class="header__logo">
+        </a>
     </header>
 
     <main>
         <section class="profile">
             <div class="profile__form">
                 <img src="images/avatar.jpg" alt="аватар" class="profile__avatar">
-                <p class="profile__name">Жак-Ив Кусто</p>
+                <h1 class="profile__name">Жак-Ив Кусто</h1>
                 <p class="profile__description">Исследователь океана</p>
                 <button class="profile__edit-button"></button>
             </div>
@@ -28,7 +30,7 @@
                 <li class="cards__item">
                     <img src="images/karachaevsk.jpg" alt="Карачаевск" class="cards__image">
                     <div class="cards__title-container">
-                        <h3 class="cards__title">Карачаевск</h3>
+                        <h2 class="cards__title">Карачаевск</h2>
                         <button class="cards__like-button"></button>
                     </div>
                 </li>
@@ -36,7 +38,7 @@
                 <li class="cards__item"> 
                     <img src="images/dombai.jpg" alt="Домбай" class="cards__image">
                     <div class="cards__title-container">
-                        <h3 class="cards__title">Домбай</h3>
+                        <h2 class="cards__title">Домбай</h2>
                         <button class="cards__like-button"></button>
                     </div>
                 </li>
@@ -44,7 +46,7 @@
                 <li class="cards__item">
                     <img src="images/elbrus.jpg" alt="Эльбрус" class="cards__image">
                     <div class="cards__title-container">
-                        <h3 class="cards__title">Гора Эльбрус</h3>
+                        <h2 class="cards__title">Гора Эльбрус</h2>
                         <button class="cards__like-button"></button>
                     </div>
                 </li>
@@ -52,7 +54,7 @@
                 <li class="cards__item">
                     <img src="images/karachaevsk.jpg" alt="Карачаевск" class="cards__image">
                     <div class="cards__title-container">
-                        <h3 class="cards__title">Карачаево-Черкессия</h3>
+                        <h2 class="cards__title">Карачаево-Черкессия</h2>
                         <button class="cards__like-button"></button>
                     </div>
                 </li>
@@ -60,7 +62,7 @@
                 <li class="cards__item">
                     <img src="images/dombai.jpg" alt="Домбай" class="cards__image">
                     <div class="cards__title-container">
-                        <h3 class="cards__title">Домбай</h3>
+                        <h2 class="cards__title">Домбай</h2>
                         <button class="cards__like-button"></button>
                     </div>
                 </li>
@@ -68,27 +70,29 @@
                 <li class="cards__item">
                     <img src="images/elbrus.jpg" alt="Эльбрус" class="cards__image">
                     <div class="cards__title-container">
-                        <h3 class="cards__title">Гора Эльбрус</h3>
+                        <h2 class="cards__title">Гора Эльбрус</h2>
                         <button class="cards__like-button"></button>
                     </div>
                 </li>
            </ul> 
         </section>
+    </main>
 
-        <footer class="footer">
-            <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
-        </footer>
+    <footer class="footer">
+        <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
+    </footer>
 
+       <div class="popup-box">
         <div class="popup">
             <button class="popup__close-button"></button>
-            <form action="#" method="POST" class="popup__container">
-                <p class="popup__title">Редактировать профиль</p>
-                <input placeholder="Жак-Ив Кусто" name="name" type="text" class="popup__input popup__input_name">
-                <input placeholder="Исследователь океана" name="name" type="text" class="popup__input popup__input_job">
+            <h2 class="popup__title">Редактировать профиль</h2>
+            <form action="#" method="POST" name="form" class="popup__container">
+                <input placeholder="Жак-Ив Кусто" name="name" type="text" class="popup__input popup__input_type_name">
+                <input placeholder="Исследователь океана" name="name" type="text" class="popup__input popup__input_type_job">
                 <button class="popup__button">Сохранить</button>
             </form>
         </div> 
-    </main>
+    </div>
 
     <script src="script.js"></script>
 </body>

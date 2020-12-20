@@ -1,12 +1,9 @@
 .popup {
     width: 100%;
-    padding-top: 190px;
-    position: fixed;
-    top: 0;
-    left: 0;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: none;
 }
 
  .popup::before {
@@ -18,28 +15,4 @@
     left: 0;
     background-color: black;
     opacity: 0.5;
-}
-
-@media screen and (min-width:901px) and (max-width:1279px) {
-    .popup {
-        padding-top: 180px;
-    }
-}
-
-@media screen and (min-width:801px) and (max-width:900px) {
-    .popup {
-        padding-top: 160px;
-    }
-}
-
-@media screen and (min-width:501px) and (max-width:800px) {
-    .popup {
-        padding-top: 145px;
-    }
-}
-
-@media screen and (max-width:500px) {
-    .popup {
-        padding-top: 120px;
-    }
 }

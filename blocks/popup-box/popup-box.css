@@ -1,0 +1,20 @@
+.popup-box {
+    width: 100%;
+    height: 720px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    .popup-box {
+        height: 668px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .popup-box {
+        height: 568px;
+    }
+}

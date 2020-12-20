@@ -25,3 +25,10 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width:500px) {
+    .profile__name {
+        margin-top: 20px;
+
+    }
+}

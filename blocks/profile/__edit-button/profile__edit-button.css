@@ -16,12 +16,12 @@
     transition: opacity 0.3s;
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:900px) {
     .profile__edit-button {
         height: 18px;
         width: 18px;
-        margin-top: 20px;
-        margin-right: 25px;
+        margin-top: 30px;
+        margin-right: 20px;
         background-size: 7.5px 7.5px;
     }
 }
