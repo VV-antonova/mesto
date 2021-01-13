@@ -94,9 +94,22 @@
         </div> 
     </div>
 
+    <div class="popup-box">
+        <div class="popup">
+            <button type="button" class="popup__close-button"></button>
+            <h2 class="popup__title">Новое место</h2>
+            <form action="#" method="POST" name="form" class="popup__container">
+                <input placeholder="Название" name="name" type="text" class="popup__input popup__input_type_name">
+                <input placeholder="Ссылка на картинку" name="name" type="text" class="popup__input popup__input_type_job">
+                <button type="submit" class="popup__button">Создать</button>
+            </form>
+        </div> 
+    </div>
+
     <template id="card-template">
         <li class="cards__item">
             <img src="#" alt="#" class="cards__image">
+            <button type="button" class="cards__basket-button"></button>
             <div class="cards__title-container">
                 <h2 class="cards__title"></h2>
                 <button type="button" class="cards__like-button"></button>
