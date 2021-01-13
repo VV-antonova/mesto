@@ -14,12 +14,6 @@
         </a>
     </header>
 
-    <header class="header">
-        <a href="#" target="_blank">
-            <img src="images/white-logo.svg" alt="логотип Место Россия" class="header__logo">
-        </a>
-    </header>
-
     <main>
         <section class="profile">
             <div class="profile__form">
@@ -32,8 +26,8 @@
         </section>
 
         <section class="cards-table">
-           <ul class="cards">
-                <li class="cards__item">
+            <ul class="cards">
+                <!--<li class="cards__item">
                     <img src="images/karachaevsk.jpg" alt="Карачаевск" class="cards__image">
                     <div class="cards__title-container">
                         <h2 class="cards__title">Карачаевск</h2>
@@ -79,7 +73,7 @@
                         <h2 class="cards__title">Гора Эльбрус</h2>
                         <button type="button" class="cards__like-button"></button>
                     </div>
-                </li>
+                </li> -->
            </ul> 
         </section>
     </main>
@@ -88,7 +82,7 @@
         <p class="footer__copyright">&copy; 2020 Mesto Russia</p>
     </footer>
 
-       <div class="popup-box">
+    <div class="popup-box">
         <div class="popup">
             <button type="button" class="popup__close-button"></button>
             <h2 class="popup__title">Редактировать профиль</h2>
@@ -99,6 +93,16 @@
             </form>
         </div> 
     </div>
+
+    <template id="card-template">
+        <li class="cards__item">
+            <img src="#" alt="#" class="cards__image">
+            <div class="cards__title-container">
+                <h2 class="cards__title"></h2>
+                <button type="button" class="cards__like-button"></button>
+            </div>
+        </li>
+    </template>
 
     <script src="script.js"></script>
 </body>

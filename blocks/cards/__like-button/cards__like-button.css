@@ -11,8 +11,3 @@
     opacity: 0.5;
     transition: opacity 0.3s;
 }
-
-.cards__like-button:active {
-    background-image: url(../../../images/black-heart.svg);
-    transition: background-image 0.3s;
-}
