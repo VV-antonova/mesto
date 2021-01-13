@@ -10,19 +10,19 @@
 }
 
 .popup__input::-webkit-input-placeholder {
-    color: black;
+    color: #C4C4C4;
 }
 
 .popup__input::-moz-placeholder {
-    color: black;
+    color: #C4C4C4;
 }
 
 .popup__input::-ms-input-placeholder {
-    color: black;
+    color: #C4C4C4;
 }
 
 .popup__input::placeholder {
-    color: black;
+    color: #C4C4C4;
 }
 
 .popup__input:first-of-type {
