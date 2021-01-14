@@ -1,7 +1,11 @@
-let popup = document.querySelector('.popup-box'),
-    form = popup.querySelector('.popup__container'),
-    popupCloseButton = popup.querySelector('.popup__close-button'),
+let popups = document.querySelectorAll('.popup-box'),
+    popupProfileForm = document.querySelector('.popup-box_type_profile-form'), //попап формы
+    popupAddCard = document.querySelector('.popup-box_type_add-card'), //попап добавления карточки
+    popupImage = document.querySelector('.popup-box_type_image'), //попап просмотра картинки
+    form = document.querySelector('.popup__container'),
+    popupCloseButtons = document.querySelectorAll('.popup__close-button'),
     profileEditButton = document.querySelector('.profile__edit-button'),
+    profileAddButton = document.querySelector('.profile__add-button'),
     InputTypeName = form.querySelector('.popup__input_type_name'),
     InputTypeJob = form.querySelector('.popup__input_type_job'),
     profileName = document.querySelector('.profile__name'),
@@ -35,7 +39,7 @@ const initialCards = [
     }
 ];    
 
-function openPopup() {
+function togglePopup(popup) {
     popup.classList.add('popup_opened');
 
     InputTypeName.value = profileName.textContent;
@@ -43,7 +47,10 @@ function openPopup() {
 }    
 
 function closePopup() {
-    popup.classList.remove('popup_opened');
+    popups.forEach(popup => {
+        popup.classList.remove('popup_opened');
+    });
+    
 }
 
 function addCard(picLink, nameValue) {
@@ -73,6 +80,27 @@ function formSubmit(evt) {
     closePopup();
 }    
 
-profileEditButton.addEventListener('click', openPopup);
-popupCloseButton.addEventListener('click', closePopup);
+profileEditButton.addEventListener('click', evt => {
+    if (evt.target === evt.currentTarget) {
+        togglePopup(popupProfileForm);
+    }
+});
+
+profileAddButton.addEventListener('click', evt => {
+    if (evt.target === evt.currentTarget) {
+        togglePopup(popupAddCard);
+    }
+});
+
+
+popupCloseButtons.forEach(btn => {
+    btn.addEventListener('click', closePopup);
+        // if (evt.target === evt.currentTarget) {
+            // console.log('click');
+            // closePopup();
+    //     }
+    // });
+});
+
+
 form.addEventListener('submit', formSubmit);
