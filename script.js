@@ -1,4 +1,4 @@
-let popups = document.querySelectorAll('.popup-box'),
+const popups = document.querySelectorAll('.popup-box'),
     popupProfileForm = document.querySelector('.popup-box_type_profile-form'), //попап формы
     InputTypeName = document.querySelector('.popup__input_type_name'), //инпут формы личных данных
     InputTypeJob = document.querySelector('.popup__input_type_job'), //инпут формы личных данных
@@ -13,9 +13,10 @@ let popups = document.querySelectorAll('.popup-box'),
     profileAddButton = document.querySelector('.profile__add-button'),
     profileName = document.querySelector('.profile__name'),
     job = document.querySelector('.profile__description'),
-    cardsContainer = document.querySelector('.cards');
+    cardsContainer = document.querySelector('.cards'),
+    cardTemplate = document.querySelector('#card-template').content,
 
-const initialCards = [
+    initialCards = [
     {
         name: 'Архыз',
         link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
@@ -42,15 +43,18 @@ const initialCards = [
     }
 ];    
 
+
 //Функции
 
-function togglePopup(popup) {
+//открытие попапа
+function openPopup(popup) {
     popup.classList.add('popup_opened');
 
     InputTypeName.value = profileName.textContent;
     InputTypeJob.value = job.textContent;
 }    
 
+//закрытие попапа
 function closePopup() {
     popups.forEach(popup => {
         popup.classList.remove('popup_opened');
@@ -58,8 +62,9 @@ function closePopup() {
     
 }
 
-function addCard(picLink, nameValue) {
-    const cardTemplate = document.querySelector('#card-template').content;
+//создание карточки
+function addCard (picLink, nameValue) {
+    
     const cardElement = cardTemplate.cloneNode(true);
     const busket = cardElement.querySelector('.cards__basket-button');
 
@@ -75,13 +80,15 @@ function addCard(picLink, nameValue) {
         cardItem.remove();
     });  
 
-    cardsContainer.append(cardElement);
+    return cardElement;
 }
 
+//отрисовка всех карточек
 initialCards.forEach(item => {
-   addCard(item.link, item.name);
+    cardsContainer.append(addCard(item.link, item.name));
 });
 
+//форма личных данных
 function profileFormSubmit(evt) {
     evt.preventDefault();
 
@@ -91,10 +98,11 @@ function profileFormSubmit(evt) {
     closePopup();
 }    
 
+//отрисовка новой карточки
 function cardFormSubmit(evt) {
     evt.preventDefault();
 
-    initialCards.unshift(addCard(InputTypeLink.value, InputTypePlaceName.value));
+    cardsContainer.prepend(addCard(InputTypeLink.value, InputTypePlaceName.value));
 
     InputTypeLink.value = '';
     InputTypePlaceName.value = '';
@@ -102,17 +110,18 @@ function cardFormSubmit(evt) {
     closePopup();
 }  
 
+
 //Обработчики
 
 profileEditButton.addEventListener('click', evt => {
     if (evt.target === evt.currentTarget) {
-        togglePopup(popupProfileForm);
+        openPopup(popupProfileForm);
     }
 });
 
 profileAddButton.addEventListener('click', evt => {
     if (evt.target === evt.currentTarget) {
-        togglePopup(popupAddCard);
+        openPopup(popupAddCard);
     }
 });
 
