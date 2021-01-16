@@ -37,6 +37,7 @@
 
 /*Подключение стилей блока формы*/
 @import url(../blocks/popup-box/popup-box.css);
+@import url(../blocks/popup-box/_type/popup-box_type_image.css);
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/__close-button/popup__close-button.css);

@@ -1,10 +1,17 @@
 .popup-box {
     width: 100%;
-    min-height: 720px;
+    height: 720px;
     position: fixed;
     top: 0;
     left: 0;
-    display: none;
+    display: none;   
+    opacity: 0; 
+    transition: opacity 0.2s linear;
+}
+
+.popup-box:hover {
+    opacity: 1;
+    /* transition: opacity 0.2s linear; */
 }
 
 @media screen and (max-width:700px) {
