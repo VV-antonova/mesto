@@ -1,3 +1,11 @@
 .popup-box_type_image {
+    padding-top: 90px;
     height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
  }
+
+ @media screen and (max-width:500px) {
+    .popup-box_type_image {
+        padding-top: 155px;
+    }
+}

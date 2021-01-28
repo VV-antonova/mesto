@@ -1,3 +1,4 @@
+const popups = document.querySelectorAll('.popup-box'); //все попапы
 const popupAddCard = document.querySelector('.popup-box_type_add-card'); //попап добавления карточки
 const popupImage = document.querySelector('.popup-box_type_image'); //попап просмотра картинки
 const popupProfileForm = document.querySelector('.popup-box_type_profile-form'); //попап формы
@@ -106,6 +107,15 @@ profileAddButton.addEventListener('click', () => {
 popupCloseButtons.forEach(btn => {
     btn.addEventListener('click', () => {
         closePopup(btn.closest('.popup-box'));
+    });
+});
+
+//закрытие попапа при клике на overlay
+popups.forEach(popup => {
+    popup.addEventListener('click', event => {
+        if (event.target === event.currentTarget) {
+            closePopup(popup);
+        }
     });
 });
 
